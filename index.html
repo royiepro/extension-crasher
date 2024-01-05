@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Blockfreezer</title>
+    <title>Crash Extension</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <script>
@@ -55,7 +55,7 @@
       }
 
       function button_handler(extension) {
-        let cancel = !confirm("Start bypass?");
+        let cancel = !confirm("Start crash? (Crash will start in 5 seconds after confirmation)");
         if (cancel) return;
         
         setTimeout(() => {
@@ -93,6 +93,8 @@
     </script>
   </head>
   <body>
+
+    
       <div id="buttons_container">
       </div>
   </body>
